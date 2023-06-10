@@ -1,4 +1,4 @@
-public class IfandElseExample {
+public class OpertaorsAndOperandsExample {
 
     public static void main(String[] args) {
         boolean isCreated = true;
@@ -32,6 +32,27 @@ public class IfandElseExample {
             System.out.println("number is not right ");
 
         }
+
+        //Ternary Operators
+        System.out.println("Ternary Example--->");
+         int age = 15;
+        boolean isAdult = (age>=18)?true:false;
+        System.out.println("Age is adult  "+isAdult);
+
+        //Example Using Everything
+        System.out.println("All Example--->");
+        double a = 20.00;
+        double b = 80.00;
+        double c = a + b * 100.0;
+        double r = c % 40.00;
+        boolean res = r == 0.00 ? true:false;
+        System.out.println(res);
+        if(!res){
+            System.out.println("Got some remainder ");
+
+        }
+
+
 
 
     }
