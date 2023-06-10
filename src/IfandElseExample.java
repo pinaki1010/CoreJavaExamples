@@ -29,7 +29,7 @@ public class IfandElseExample {
         if(number >= 50 || number < 80){
             System.out.println("number is right");
         }else{
-            System.out.println("number is not ok ");
+            System.out.println("number is not right ");
 
         }
 
