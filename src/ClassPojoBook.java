@@ -3,6 +3,18 @@ public class ClassPojoBook {
     private int price;
     private int bookPageCount;
 
+    public ClassPojoBook(){
+        System.out.println("Default Constructor Called");
+
+    }
+    public ClassPojoBook(String name,int price,int bookPageCount){
+        System.out.println("Parameterize Constructor Called");
+        this.name=name;
+        this.price=price;
+        this.bookPageCount=bookPageCount;
+
+    }
+
     public String getName(){
        return name;
 
