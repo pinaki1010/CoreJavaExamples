@@ -3,10 +3,19 @@ public class ClassPojoBook {
     private int price;
     private int bookPageCount;
 
-    public ClassPojoBook(){
-        System.out.println("Default Constructor Called");
+ //Constructor Chaining  For Constructor Chaing we need to call parameterize constructor before any statment in default constructor
+ public ClassPojoBook(){
+     this("Geo",2323,343);
+     System.out.println("Default Constructor Called");
 
-    }
+ }
+
+// //Default Constructor
+//    public ClassPojoBook(){
+//        System.out.println("Default Constructor Called");
+//
+//    }
+    //Parameterize Constructor
     public ClassPojoBook(String name,int price,int bookPageCount){
         System.out.println("Parameterize Constructor Called");
         this.name=name;

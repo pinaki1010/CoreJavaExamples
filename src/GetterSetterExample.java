@@ -14,7 +14,8 @@ public class GetterSetterExample {
 
         //Constructor Example
 
-        //ClassPojoBook classPojoBook1 = new ClassPojoBook();
+        ClassPojoBook classPojoBook1 = new ClassPojoBook();//chaining constructor
+        System.out.println("Name-->"+classPojoBook1.getName()+"\nBook Price-->"+classPojoBook1.getPrice()+"\nPage Count--->"+classPojoBook1.getBookPageCount());
         ClassPojoBook classPojoBook2 = new ClassPojoBook("English",1002,10003);
         System.out.println("Name-->"+classPojoBook2.getName()+"\nBook Price-->"+classPojoBook2.getPrice()+"\nPage Count--->"+classPojoBook2.getBookPageCount());
 
