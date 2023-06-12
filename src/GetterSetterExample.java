@@ -18,6 +18,13 @@ public class GetterSetterExample {
         System.out.println("Name-->"+classPojoBook1.getName()+"\nBook Price-->"+classPojoBook1.getPrice()+"\nPage Count--->"+classPojoBook1.getBookPageCount());
         ClassPojoBook classPojoBook2 = new ClassPojoBook("English",1002,10003);
         System.out.println("Name-->"+classPojoBook2.getName()+"\nBook Price-->"+classPojoBook2.getPrice()+"\nPage Count--->"+classPojoBook2.getBookPageCount());
+       //CALL BY Record Class
+        RecordPojoBook recordPojoBook = new RecordPojoBook("History",500,5000);
+        System.out.println(recordPojoBook);
+        System.out.println("BookNAME--->"+recordPojoBook.name());
+        System.out.println("BookPRICE--->"+recordPojoBook.price());
+        System.out.println("BookPageCount--->"+recordPojoBook.bookPageCount());
+
 
 
     }
