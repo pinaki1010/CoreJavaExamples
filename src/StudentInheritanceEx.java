@@ -46,4 +46,7 @@ public class StudentInheritanceEx {
             }
         });
    }
+   public void getStudentName(){
+        System.out.println("Hi I am At Student Class");
+   }
 }
