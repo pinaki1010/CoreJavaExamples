@@ -22,6 +22,11 @@ public class TreeSetExample {
         System.out.println("higher--->"+set.higher(65));
         //Subset//lower is inclusive and upper is exclusive
         System.out.println("subset between 65 to 100--->"+set.subSet(65,100));
-
+        //if we want to both inclusive we need to provide both true
+        System.out.println("subset between 65 to 100--->"+set.subSet(65,true,100,true));
+        //HeadSet LESS THAN AFTER NUMBER
+        System.out.println("HeadShot--->"+set.headSet(95));
+        //tailSet LESS THAN AFTER NUMBER
+        System.out.println("HeadShot--->"+set.tailSet(95));
     }
 }
