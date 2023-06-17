@@ -62,5 +62,17 @@ public class InterfaceExampleEx {
         women.drink();
         women.sleep();
 
+        //By For Method Polymorphism
+        System.out.println("Polymorphism Method Example ----->");
+        Human human[] = {new Men(),new Women()};
+
+        for(Human humanex:human){
+            humanex.eat();
+            humanex.drink();
+            humanex.sleep();
+
+        }
+
+
     }
 }
