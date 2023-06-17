@@ -14,7 +14,7 @@ public class CharacterOccuranceEx {
 
         for(char c:charCount){
 
-            Integer integer = character.get(character);
+            Integer integer = character.get(c);
 
             if(integer==null){
                 character.put(c,1);
