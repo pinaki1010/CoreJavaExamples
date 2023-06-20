@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class FunctionalProgramEx {
@@ -39,7 +40,31 @@ public class FunctionalProgramEx {
        int max= list1.stream().max((a,b)-> Integer.compare(a,b)).get();
         System.out.println("\n Max Number"+max);
 
+       //min
 
+        int min= list1.stream().min((a,b)-> Integer.compare(a,b)).get();
+        System.out.println("\n Max Number-->"+min);
+
+        //odd number
+        System.out.print("odd-number-->");
+        list1.stream().filter(e->e%2==1).forEach(e-> System.out.print(" "+e));
+
+        //Collectors
+        System.out.print("\n List Element-->");
+        List<Integer> listInt = list1.stream().filter(e->e%2==1).collect(Collectors.toList());
+
+        System.out.println(""+listInt);
+
+        //BOX
+        System.out.println(IntStream.range(1,11).map(e->e*e).boxed().collect(Collectors.toList()));
+
+        //orElse
+
+        System.out.println(list1.stream().filter(e->e%2==1).max((a,b)->Integer.compare(a,b)).orElse(0));
+
+        //behind the scence filter->predicate->test
+        //behind the scence foreach->consumer->accept
+       //map->function->apply
     }
     private static void printBasic(List<String> list){
         for(String string:list){
