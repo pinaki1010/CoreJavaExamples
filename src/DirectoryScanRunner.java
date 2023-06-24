@@ -33,5 +33,6 @@ public class DirectoryScanRunner {
         Path currentDirForData = Paths.get("./resources/data.txt");
         List<String> lines=Files.readAllLines(currentDirForData);
         System.out.println("Data are"+lines);
+
     }
 }
